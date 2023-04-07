@@ -1,0 +1,64 @@
+.homes
+  margin: 15rem 0
+  grid-row: 4
+  grid-column: 3 / 11
+  display: grid
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr))
+  gap: 7rem
+  @include respond(56.25em)
+    grid-row: 5
+    margin: 10rem 0
+  @include respond(50em)
+    grid-row: 6
+.home
+  background-color: $color-grey-light-1
+  display: grid
+  grid-template-columns: repeat(2, 1fr)
+  gap: 3.5rem
+  &__img
+    width: 100%
+    grid-column: 1 / -1
+    grid-row: 1 / 2
+  &__name
+    grid-column: 1 / -1
+    background-color: $color-secondary
+    color: #fff
+    font-size: 1.6rem
+    font-family: $font-display
+    text-align: center
+    padding: 1.25rem
+    font-weight: 400
+    width: 80%
+    justify-self: center
+    grid-row: 1 / 2
+    align-self: end
+    transform: translateY(50%)
+  &__like
+    width: 2.5rem
+    height: 2.5rem
+    fill: $color-primary
+    grid-column: 2 / -1
+    grid-row: 1 / 2
+    justify-self: end
+    margin: 1rem
+    cursor: pointer
+  &__location,
+  &__rooms
+    margin-top: 2rem
+  &__location,
+  &__rooms,
+  &__area,
+  &__price
+    font-size: 1.4rem
+    display: flex
+    align-items: center
+    margin-left: 2rem
+    svg
+      width: 2rem
+      height: 2rem
+      fill: $color-primary
+      margin-right: 1rem
+    span
+  &__cta
+    grid-column: span 2
+    text-align: center

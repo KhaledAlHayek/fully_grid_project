@@ -1,0 +1,35 @@
+.footer
+  background-color: $color-secondary
+  grid-row: 6
+  grid-column: 2 / -1
+  padding: 8rem
+  @include respond(56.25em)
+    grid-row: 7
+  @include respond(50em)
+    grid-row: 8
+.list
+  list-style: none
+  display: grid
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr))
+  gap: 2rem
+  align-items: center
+  &__item
+  &__link
+    &:visited,
+    &:link
+      text-decoration: none
+      text-transform: uppercase
+      color: #fff
+      font-size: 1.4rem
+      padding: 1.5rem
+      display: block
+      text-align: center
+      transition: all .2s
+      &:hover
+        transform: translateY(-.3rem)
+        background-color: rgba($color-grey-light-1, .05)
+.copyright
+  font-size: 1.4rem
+  color: $color-grey-light-2
+  text-align: center
+  margin-top: 6rem

@@ -1,0 +1,53 @@
+%heading
+  font-family: $font-display
+
+.heading-1
+  @extend %heading
+  color: #fff
+  font-size: 4.5rem
+  font-weight: 400
+  line-height: 1
+
+.heading-2
+  @extend %heading
+  font-size: 4rem
+  font-style: italic
+  color: $color-grey-dark-1
+  line-height: 1
+  font-weight: 400
+.heading-3
+  @extend %heading
+  color: $color-primary
+  text-transform: uppercase
+  font-size: 1.6rem
+  font-weight: 400
+.heading-4
+  @extend %heading
+  font-size: 1.9rem
+  font-weight: 400
+  &--dark
+    color: $color-grey-dark-1
+  &--light
+    color: $color-grey-light-1
+.mb-sm
+  margin-bottom: 2rem
+.mb-md
+  margin-bottom: 3rem
+.mb-lg
+  margin-bottom: 4rem
+.mb-xlg
+  margin-bottom: 8rem
+.btn
+  border: none
+  outline: none
+  background-color: $color-primary
+  transition: all .2s
+  cursor: pointer
+  padding: 1.8rem 3rem
+  text-transform: uppercase
+  color: #fff
+  font-size: 1.5rem
+  font-weight: 400
+  font-family: $font-display
+  &:hover
+    background-color: $color-primary-dark
